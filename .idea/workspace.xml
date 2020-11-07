@@ -11,15 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ca2668-df1d-454d-a2b9-cb6f92776e01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UsersRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_07_175258_add_photo_id_to_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/includes/form_error.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codehacking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codehacking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/app.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,20 +111,26 @@
       <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/jeremeamia/superclosure" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jTDgytT3yKtEPzrX7ClKAKv03P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/gulpfile.js" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.install">
@@ -143,7 +157,9 @@
       <workItem from="1603819304448" duration="6033000" />
       <workItem from="1603825425320" duration="3069000" />
       <workItem from="1603880915301" duration="4002000" />
-      <workItem from="1603902287540" duration="4216000" />
+      <workItem from="1603902287540" duration="7513000" />
+      <workItem from="1604730708718" duration="18088000" />
+      <workItem from="1604769262129" duration="3023000" />
     </task>
     <servers />
   </component>
@@ -162,30 +178,49 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="462" y="119" key="FileChooserDialogImpl" timestamp="1603823983112">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603823983112" />
-    <state width="1323" height="439" key="GridCell.Tab.0.bottom" timestamp="1603902403015">
+    <state width="1323" height="439" key="GridCell.Tab.0.bottom" timestamp="1603912390172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="439" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603902403015" />
-    <state width="1323" height="439" key="GridCell.Tab.0.center" timestamp="1603902403007">
+    <state width="1323" height="439" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603912390172" />
+    <state width="1323" height="439" key="GridCell.Tab.0.center" timestamp="1603912390172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="439" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603902403007" />
-    <state width="1323" height="439" key="GridCell.Tab.0.left" timestamp="1603902403007">
+    <state width="1323" height="439" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603912390172" />
+    <state width="1323" height="439" key="GridCell.Tab.0.left" timestamp="1603912390172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="439" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603902403007" />
-    <state width="1323" height="439" key="GridCell.Tab.0.right" timestamp="1603902403015">
+    <state width="1323" height="439" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603912390172" />
+    <state width="1323" height="439" key="GridCell.Tab.0.right" timestamp="1603912390172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="439" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603902403015" />
+    <state width="1323" height="439" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603912390172" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1604771048606">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1604771048606" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604749934401">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1604749934401" />
     <state x="399" y="172" key="jetbrains.nodejs.interpreters-dialog" timestamp="1603823985814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="399" y="172" key="jetbrains.nodejs.interpreters-dialog/0.0.1366.728@0.0.1366.728" timestamp="1603823985814" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1604750108144">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604750108144" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604770972602">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604770972602" />
   </component>
 </project>
