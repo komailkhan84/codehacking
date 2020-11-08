@@ -19,7 +19,9 @@ class AdminUsersController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+       $users = User::all();
+//        $users = User::where('');
+
         return view('admin.users.index',compact('users'));
 
     }
@@ -67,9 +69,7 @@ class AdminUsersController extends Controller
         User::create($input);
 
 
-
-
-//        return redirect('/admin/users');
+        return redirect('/admin/users');
 
 //        return $request->all();
 
@@ -85,6 +85,7 @@ class AdminUsersController extends Controller
     {
         //
 
+
         return view('admin.users.show');
     }
 
@@ -98,7 +99,12 @@ class AdminUsersController extends Controller
     {
         //
 
-        return view('admin.users.edit');
+        $user = User::findOrFail($id);
+
+        $roles = Role::lists('name','id')->all();
+
+        return view('admin.users.edit',compact('user','roles'));
+
     }
 
     /**

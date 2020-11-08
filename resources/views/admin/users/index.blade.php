@@ -12,6 +12,7 @@
          <thead>
            <tr>
              <th>Id</th>
+             <th>Photo</th>
              <th>Name</th>
              <th>Email</th>
              <th>Role</th>
@@ -28,9 +29,18 @@
          <tbody>
            <tr>
              <td>{{$user->id}}</td>
-             <td>{{$user->name}}</td>
+             <td>@if(!empty($user->photo->file))
+                 <img src="{{asset("images/".$user->photo->file)}}" height="50"  alt="image" >
+                 @else
+                     <img  src="{{asset('https://via.placeholder.com/300.png/09f/fffC/O https://placeholder.com/')}}" height="50" alt="image">
+                 @endif
+             </td>
+
+
+             <td><a href="{{route('admin.users.edit', $user->id)}}">{{$user->name}}</a></td>
+
              <td>{{$user->email}}</td>
-           <td>{{$user->role->name}}</td>
+             <td>{{$user->role ? $user->role->name : 'User has no role'}}</td>
              <td>{{$user->is_active == 1 ? 'Active' : 'Not Active' }}</td>
              <td>{{$user->created_at->diffForHumans()}}</td>
              <td>{{$user->updated_at->diffForHumans()}}</td>

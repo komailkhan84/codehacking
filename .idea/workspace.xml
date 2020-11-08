@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,13 +14,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ca2668-df1d-454d-a2b9-cb6f92776e01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/1604837887Kirkjufell-vs.-Matterhorn-Worlds-most-beautiful-mountain-battle-3-1000x600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604849296EeZw0fQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604849965Kirkjufell-vs.-Matterhorn-Worlds-most-beautiful-mountain-battle-3-1000x600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604850897EeZw0fQ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604851109light.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604852074IMG_0820.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Photo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_180919_create_photos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_07_180919_create_photos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_07_175258_add_photo_id_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_07_175258_add_photo_id_to_users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +159,10 @@
       <workItem from="1603880915301" duration="4002000" />
       <workItem from="1603902287540" duration="7513000" />
       <workItem from="1604730708718" duration="18088000" />
-      <workItem from="1604769262129" duration="4939000" />
+      <workItem from="1604769262129" duration="7809000" />
+      <workItem from="1604819016550" duration="6513000" />
+      <workItem from="1604835780956" duration="3438000" />
+      <workItem from="1604848330471" duration="3874000" />
     </task>
     <servers />
   </component>
@@ -200,6 +213,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1604749934401" />
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1604776918511">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1604776918511" />
     <state x="399" y="172" key="jetbrains.nodejs.interpreters-dialog" timestamp="1603823985814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -208,9 +225,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604750108144" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604770972602">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604838249337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604770972602" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604838249337" />
   </component>
 </project>
