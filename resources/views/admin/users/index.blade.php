@@ -32,7 +32,7 @@
              <td>@if(!empty($user->photo->file))
                  <img src="{{asset("images/".$user->photo->file)}}" height="50"  alt="image" >
                  @else
-                     <img  src="{{asset('https://via.placeholder.com/300.png/09f/fffC/O https://placeholder.com/')}}" height="50" alt="image">
+                     <img  src="{{asset('https://via.placeholder.com/50x50')}}"  alt="image">
                  @endif
              </td>
 

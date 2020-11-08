@@ -5,13 +5,23 @@
 
 @section('content')
 
+<div class="row">
 
 
     <h1>Edit users</h1>
 
-    <div class="col-sm-3">
 
-{{--        <img src="{{$user->photo->file}}" alt="" class="img-responsive img-rounded">--}}
+    <div class="col-sm-3">
+        @if(!empty($user->photo->file))
+
+            <img src="{{asset("images/".$user->photo->file)}}" class="img-responsive img-rounded"  alt="image" >
+        @else
+
+            <img  src="{{asset('https://via.placeholder.com/150x150')}}"  alt="image">
+
+        @endif
+
+
 
 
 
@@ -22,7 +32,7 @@
     <div class="col-sm-9">
 
 
-        {!!   Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@store',$user->id],'files'=>true])   !!}
+        {!!   Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id],'files'=>true])   !!}
 
 
         <div class="form-group">
@@ -66,9 +76,13 @@
 
     </div>
 
+</div>
 
-    @include('includes.form_error')
 
+    <div class="row">
+         @include('includes.form_error')
+
+    </div>
 
 @endsection
 
