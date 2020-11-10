@@ -12,9 +12,11 @@ class Photo extends Model
 //    public $uploads = '/images/';
 
 
-public function user(){
-    return $this->hasMany('App\User','id');
-}
+    public function user(){
+
+        return $this->hasMany('App\User','id');
+
+    }
 
 
 //    public function getFileAttribute($photo){

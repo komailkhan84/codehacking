@@ -9,7 +9,9 @@ use App\User;
 use App\Role;
 use Illuminate\Http\Request;
 
+
 use App\Http\Requests;
+use MongoDB\Driver\Session;
 
 class AdminUsersController extends Controller
 {
@@ -146,7 +148,7 @@ class AdminUsersController extends Controller
         }
 
 
-        $input = $request->all();
+//        $input = $request->all();
 
         if ($file = $request->file('photo_id')){
 
@@ -176,5 +178,13 @@ class AdminUsersController extends Controller
     public function destroy($id)
     {
         //
+
+        User::findOrFail($id)->delete();
+
+
+
+       return redirect('admin/users');
+
     }
+
 }

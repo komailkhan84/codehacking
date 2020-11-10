@@ -14,16 +14,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ca2668-df1d-454d-a2b9-cb6f92776e01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UsersEditRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1604852807light.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1604858898IMG_7571.1jpg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1604858938IMG_0654.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1604859767IMG_1189.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostsCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_071443_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604863091IMG_0545.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604863160IMG_0556.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604863600IMG_0549.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604863973IMG_0097.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604945108IMG_0033.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1604996995IMG_0038.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/1605028995IMG_0033.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +175,10 @@
       <workItem from="1604769262129" duration="7809000" />
       <workItem from="1604819016550" duration="6513000" />
       <workItem from="1604835780956" duration="3438000" />
-      <workItem from="1604848330471" duration="8872000" />
+      <workItem from="1604848330471" duration="12806000" />
+      <workItem from="1604942433882" duration="3809000" />
+      <workItem from="1604992088225" duration="4911000" />
+      <workItem from="1605028382015" duration="642000" />
     </task>
     <servers />
   </component>
@@ -181,10 +201,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604858641398">
+    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604943217200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604858641398" />
+    <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604943217200" />
     <state x="462" y="119" key="FileChooserDialogImpl" timestamp="1603823983112">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -225,13 +245,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="399" y="172" key="jetbrains.nodejs.interpreters-dialog/0.0.1366.728@0.0.1366.728" timestamp="1603823985814" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1604750108144">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1604993634087">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604750108144" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604838249337">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604993634087" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604861232315">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604838249337" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604861232315" />
   </component>
 </project>
