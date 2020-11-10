@@ -6,7 +6,7 @@
 
     <h1>Posts</h1>
 
-     <table class="table">
+     <table class="table table-hover">
          <thead>
            <tr>
              <th>id</th>
@@ -31,7 +31,7 @@
             <td><img height="50" src="{{$post->photo ? $post->photo->file : 'https://via.placeholder.com/50x50' }}" alt=""></td>--}}
 
                <td>@if(!empty($post->photo->file))
-                       <img src="{{asset("images/".$post->photo->file)}}" height="50"  alt="image" >
+                       <img src="{{asset("images/".$post->photo->file)}}" height="60"  alt="image" >
                    @else
                        <img  src="{{asset('https://via.placeholder.com/50x50')}}"  alt="image">
                    @endif
@@ -39,7 +39,7 @@
 
 
              <td>{{$post->user->name}}</td>
-             <td>{{$post->category_id}}</td>
+             <td>{{$post->category ? $post->category->name : 'Uncategorized'}}</td>
 
              <td>{{$post->title}}</td>
              <td>{{$post->body}}</td>
