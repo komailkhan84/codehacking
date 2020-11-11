@@ -38,7 +38,7 @@
                </td>
 
 
-             <td>{{$post->user->name}}</td>
+             <td><a href="{{route('admin.posts.edit', $post->id)}}">{{$post->user->name}}</a></td>
              <td>{{$post->category ? $post->category->name : 'Uncategorized'}}</td>
 
              <td>{{$post->title}}</td>
