@@ -155,4 +155,17 @@ class AdminPostsController extends Controller
 
 
     }
+
+
+    public function post($id){
+
+         $post = Post::findOrFail($id);
+
+//         $comments = $post->comments;
+
+         return view('post',compact('post'));
+
+    }
+
+
 }

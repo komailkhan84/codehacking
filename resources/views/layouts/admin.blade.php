@@ -12,7 +12,7 @@
     <title>Admin</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('assets/css/libs/blogs-post.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/libs/blog-post.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/libs/bootstrap.css')}}" rel="stylesheet">
 {{--    <link href="{{asset('assets/css/libs/font-awesome.css')}}" rel="stylesheet">--}}
     <link href="{{asset('assets/css/libs/metisMenu.css')}}" rel="stylesheet">
@@ -28,12 +28,14 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    @yield('styles')
+
 
 
 
 </head>
 
-<body id="admin-page">
+<body id="admin-page" style="padding-top: 0px;}">
 
 <div id="wrapper">
 
@@ -152,6 +154,10 @@
                                 <a href="{{route('admin.posts.create')}}">Create Post</a>
                             </li>
 
+                            <li>
+                                <a href="{{route('admin.comments.index')}}">All Comments</a>
+                            </li>
+
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
@@ -177,16 +183,19 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Media<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/media">All Media</a>
+                                <a href="{{route('admin.media.index')}}">All Media</a>
                             </li>
 
                             <li>
-                                <a href="">Upload Media</a>
+                                <a href="{{route('admin.media.create')}}">Upload Media</a>
                             </li>
 
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+
+
+
 
 
 
@@ -362,7 +371,7 @@
 
 
 
-@yield('footer')
+@yield('scripts')
 
 
 
